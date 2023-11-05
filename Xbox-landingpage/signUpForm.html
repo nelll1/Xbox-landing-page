@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="xbog-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+
+  
+<div class="signIn-form-container">
+    <div class="form-container">
+      <a href="index.html" class="exit"><svg width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#ffffff" d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2zm0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12z"/>
+        <path fill="#ffffff" d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z"/>
+    </svg></a>
+      <p class="title">Login</p>
+      <form class="form">
+        <div class="input-group">
+          <label for="email">Username</label>
+          <input type="text" name="username" id="username"  placeholder="">
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="login-password" placeholder="">
+          <div class="forgot">
+            <a rel="noopener noreferrer" href="#" id="forgot-password">Forgot Password ?</a>
+          </div>
+        </div>
+        <button class="sign" onclick="signIn()">Sign in</button>
+      </form>
+      <div class="social-message">
+        <div class="line"></div>
+        <p class="message">Login with social accounts</p>
+        <div class="line"></div>
+      </div>
+      <div class="social-icons">
+        <button aria-label="Log in with Google" class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+            <path d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z"></path>
+          </svg>
+        </button>
+        <button aria-label="Log in with Microsoft" class="icon">
+          <svg width="515" height="515" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#ffffff" d="M11.501 3v8.5h-8.5V3h8.5Zm0 18h-8.5v-8.5h8.5V21Zm1-18h8.5v8.5h-8.5V3Zm8.5 9.5V21h-8.5v-8.5h8.5Z"/>
+        </svg>
+        </button>
+      </div>
+      <p class="signup">Don't have an account?
+        <a rel="noopener noreferrer" href="#" class="" id="direct-signup-page" onclick="directSignUpPage()">Sign up</a>
+      </p>
+    </div>
+
+    <!--sign up page-->
+
+    <div class="sign-up-form-container">
+   
+      <p class="title">Sign Up</p>
+      <form class="form">
+
+        <!--email-->
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text" name="signupEmail" id="signupEmail"  placeholder="">
+        </div>
+
+        <!--username-->
+        <div class="input-group">
+          <label for="email">Username</label>
+          <input type="text" name="username" id="signup-username"  placeholder="">
+        </div>
+
+        <!--password-->
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="">
+
+          <!--Confirm pass-->
+        <div class="input-group">
+          <label for="password">Confirm Password</label>
+          <input type="password" name="password" id="signup-password" placeholder="">
+        
+        <button class="sign-up-btn" id="signbtn" onclick="signUp()">Sign up</button>
+      </form>
+
+      <div class="social-message">
+        <div class="line"></div>
+        <p class="message">Sign up with social accounts</p>
+        <div class="line"></div>
+      </div>
+      <div class="social-icons">
+        <button aria-label="Log in with Google" class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+            <path d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z"></path>
+          </svg>
+        </button>
+        <button aria-label="Log in with Microsoft" class="icon">
+          <svg width="515" height="515" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#ffffff" d="M11.501 3v8.5h-8.5V3h8.5Zm0 18h-8.5v-8.5h8.5V21Zm1-18h8.5v8.5h-8.5V3Zm8.5 9.5V21h-8.5v-8.5h8.5Z"/>
+        </svg>
+        </button>
+      </div>
+      <p class="signup">have an account?
+        <a rel="noopener noreferrer" href="#" class="" onclick="directLoginPage()">Login</a>
+      </p>
+    </div>
+
+
+  </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

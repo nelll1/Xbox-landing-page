@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/transition-style/transition.circles.min.css">
+    <link rel="shortcut icon" href="xbog-logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>XBOX</title>
+  </head>
+  <body>
+    
+    <main>
+    <header>
+      <div class="logo-container">
+        <img src="xbog-logo.png" alt="Xbox logo" class="logo" />
+        <h3>XBOX <span>SHOP</span></h3>
+      </div>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="" style="color: aliceblue;">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </nav>
+      <a href="signUpForm.html" class="cta"><button class="sign-up" id="sign-up">SIGN UP</button></a>
+    </header>
+<main>
+    <div class="home-page">
+      <div class="intro-section">
+        <p class="text-heading">Keep up with the era</p>
+        <p class="sub-heading">
+          Change you gaming experience to the next
+          level with our product.
+        </p>
+        <div class="buttons">
+          <div class="card"><p>$70 from microsoft</p></div>
+          <button class="play" id="play"><i class="fa-solid fa-play" style="color: #000000;"></i></button>
+          <p>How it made</p>
+        </div>
+      </div>
+
+      <div class="image-section">
+        <div class="animate__animated animate__flash line-dot">
+          <p class="controller-text">Compatible with Controller</p>
+          <div class="line1"></div>
+          <div class="dot1"></div>
+        </div>
+        <div class="animate__animated animate__flash line-dot2">
+          <p class="controller-text2">Made of High Quality Silicon</p>
+          <div class="line2"></div>
+          <div class="dot2"></div>
+        </div>
+        
+       <img src="images/xbox-controller-2.png" alt="">
+      </div>
+    </div>
+    <div class="video-circle" transition-style="in:circle:hesitate" id="circle">
+          
+    <video width="100%" height="100%" id="video">
+        <source src="images/Xbox Elite Wireless Controller Series 2 - E3 2019 - Announce Trailer (online-video-cutter.com).mp4" type="video/mp4">
+    </video>
+</main>
+
+    <script src="main.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+
+  </body>
+</html>

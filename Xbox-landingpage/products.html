@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+          <a href="index.html"><img src="xbog-logo.png" alt="Xbox logo" class="logo" /></a>
+          <h3>XBOX <span>SHOP</span></h3>
+        </div>
+        <nav>
+          <ul class="nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" style="color: aliceblue;">Products</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </nav>
+        <a href="signUpForm.html" class="cta"><button class="sign-up" id="sign-up">SIGN UP</button></a>
+      </header>
+
+<div class="all-products-container">
+      <div class="swiper-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/product1-swiper.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/product2-swiper.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/product3-swiper.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="product-list">
+      </div>
+      <h1 class="text-console">ALL XBOX CONSOLES</h1>
+      <hr>
+        <div class="items">
+          <div class="product-card">
+            <div class="image">
+              <img src="images/item1-removebg-preview.png" alt="">
+            </div>
+            <div class="text">
+              <span>Xbox Series S - 1TB (Black)</span>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="image">
+              <img src="images/item2.png" alt="">
+            </div>
+            <div class="text">
+              <span>Xbox Series X - Diablo IV® Bundle</span>
+              <p></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="image">
+              <img src="images/item3.png" alt="">
+            </div>
+            <div class="text">
+              <span>Xbox Series X – Forza Horizon 5 Bundle</span>
+              <p></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="image">
+              <img src="images/item4.png" alt="">
+            </div>
+            <div class="text">
+              <span>Xbox Series X (Certified Refurbished)</span>
+              <p></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="image">
+              <img src="images/item5.png" alt="">
+            </div>
+            <div class="text">
+              <span>Xbox Series X</span>
+              <p></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="image">
+              <img src="images/item6.png" alt="">
+            </div>
+            <div class="text">
+              <span>Xbox Series S - Gilded Hunter Bundle</span>
+              <p></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="image">
+              <img src="images/item7.png" alt="">
+            </div>
+            <div class="text">
+              <span>Xbox Series S (Certified Refurbished)</span>
+              <p></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="image">
+              <img src="images/item8.png" alt="">
+            </div>
+            <div class="text">
+              <span>Xbox Series S</span>
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer-container">
+            <div class="row">
+              <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">our services</a></li>
+                  <li><a href="#">privacy policy</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">shipping</a></li>
+                  <li><a href="#">returns</a></li>
+                  <li><a href="#">order status</a></li>
+                  <li><a href="#">payment options</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Others</h4>
+                <ul>
+                  <li><a href="#">Console</a></li>
+                  <li><a href="#">Games</a></li>
+                  <li><a href="#">Game pass</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+       </footer>
+    </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>   
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+      </script>
+</body>
+</html>
